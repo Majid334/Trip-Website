@@ -1,1 +1,57 @@
+/* Color */
+:root {
+  --PrimaryColor:hsl(26,93%,50%);
+  --HoverColor:hsl(26,90%,42%);
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor:hsl(0, 0%, 10%);
+  --textColor:hsl(240,1%,48%);
+  --whiteColorDeam:hsl(0,0%,93%);
+  --greyBg:hsl(0,0%,96%);
+  --greyText:rgb(190,190,190);
+  --inputColor:hsl(330,12%,97%);
+}
+
+.navLists {
+  display: flex; /* Make the list items inline using Flexbox */
+  gap: 10px; /* Add some spacing between the items (optional) */
+  list-style: none; /* Remove default bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.navBarSection .header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+}
+.navBarSection .header .logodiv .logo {
+  color: var(--whiteColor);
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.navBarSection .header .logodiv .logo .icon {
+  color: var(--PrimaryColor);
+  font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+  .navBarSection .header .navBar {
+    background: var(--greyBg);
+    position: absolute;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+  }
+}
 /*# sourceMappingURL=navbar.css.map */
