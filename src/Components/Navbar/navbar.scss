@@ -52,8 +52,51 @@
                 padding: 1rem;
                 width: 100%;
                 top: 0;
+                left: -500%;
+                box-shadow: 0 2px 4px rgba(209,209,209,0.904);
+                transition: .5s ease;
+                z-index: 1000;
+
+
+                .navLists{
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                    margin: auto;
+
+
+                    .navItem{
+                        padding: 1rem 0;
+                        .navLink{
+                            color:var(--textColor);
+                            font-size: .9rem;
+                            font-weight: 600;
+                            &:hover{
+                                color: var(--PrimaryColor);
+
+                            }
+                        }
+
+                    }
+                    .headerBtns{
+                        flex-direction: column;
+                        
+                    }
+                }
+                .closeNavbar{
+                    position: absolute;
+                    top: 1rem;
+                    right: 1.5rem;
+                    color: var(--PrimaryColor);
+                    &:hover .icon{
+                        color:var(--HoverColor);
+                    }
+                }
+
+            }
+            .activeNavbar{
                 left: 0;
-                background-color: black;
+            
             }
 
         }
